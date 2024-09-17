@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="resultado" type="id" />
+    <item name="dicisao" type="id" />
+    <item name="divisao" type="id" />
+</resources>

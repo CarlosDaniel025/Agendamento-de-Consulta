@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Calcular"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+
+        <!-- Nome do Paciente -->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="Atendimento de Consulta Virtual"
+            app:titleMarginStart="50sp"
+            app:titleTextColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nome do Paciente"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome"
+            android:inputType="textPersonName" />
+
+        <!-- Data da Consulta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Data da Consulta"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite a data (dd/mm/aaaa)"
+            android:inputType="datetime|date" />
+
+        <!-- Tipo de Consulta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tipo de Consulta"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioVirtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virtual" />
+
+            <RadioButton
+                android:id="@+id/radioPresencial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presencial" />
+        </RadioGroup>
+
+        <!-- Motivo da Consulta -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Motivo da Consulta"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextMotivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descreva o motivo da consulta"
+            android:inputType="textMultiLine" />
+
+        <!-- Botão para Agendar -->
+        <Button
+            android:id="@+id/buttonAgendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#029DE8"
+            android:text="Agendar Consulta"
+            android:textColorLink="#00ACFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
