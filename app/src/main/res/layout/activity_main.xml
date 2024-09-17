@@ -23,8 +23,8 @@
             android:background="@android:color/holo_blue_dark"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
-            app:title="Atendimento de Consulta Virtual"
-            app:titleMarginStart="50sp"
+            app:title="Agendamento de Consulta "
+            app:titleMarginStart="65sp"
             app:titleTextColor="#FFFFFF" />
 
         <TextView
